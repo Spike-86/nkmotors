@@ -1,0 +1,51 @@
+main {
+  text-align: center;
+  height: 90vh;
+}
+
+main::after {
+  content: "";
+  background: url('../../assets/background.jpg') center no-repeat;
+  background-size: contain;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+
+  right: 10vw;
+}
+
+agm-map {
+  height: 50vh;
+}
+
+.addRoute {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+
+.reviews star-rating {
+  position: absolute;
+  right: 20px;
+}

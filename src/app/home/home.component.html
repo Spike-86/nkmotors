@@ -1,0 +1,39 @@
+<app-header></app-header>
+<main>
+  <h1>Качественный ремонт автомобилей</h1>
+  <h2>город Минск, Партизанский район, улица Захарова 104</h2>
+  <p>Автосервис НК Моторс производит ремонт и обслуживание легковых автомобилей и микроавтобусов.
+    Отличительной особенностью станции является индивидуальный подход и гибкая стоимость работ. Наша СТО имеет необходимые сертификаты и предоставляет гарантию в соответствии с законодательством РБ.
+    Предоставляем услуги подбора и заказа оригинальных и неоригинальных запчастей из США, РФ, Европы, Японии. Приглашаем к сотрудничеству юрлица и организации.</p>
+
+</main>
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  <agm-direction [origin]="origin" [destination]="destination" [markerOptions]="markerOptions" *ngIf="origin">
+  </agm-direction>
+</agm-map>
+<button mat-flat-button color="primary" class="addRoute" (click)="addRoute()">Построить маршрут</button>
+
+<div class="reviews">
+
+  <h3>Отзывы наших клиентов:</h3>
+
+  <mat-card class="example-card" *ngFor="let review of reviews.getReview()">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" [style.backgroundImage]="'url('+ review.profile_photo_url +')'"></div>
+      <mat-card-title>{{ review.author_name }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{ review.text }}
+      </p>
+      <p>
+        <star-rating [starType]="'svg'" [rating]="review.rating"></star-rating>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+

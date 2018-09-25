@@ -1,0 +1,76 @@
+.contacts a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*.call h3 {*/
+  /*animation: pulse 4s infinite;*/
+/*}*/
+
+.callIcon {
+  margin-right: 5px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+mat-toolbar-row {
+  position: relative;
+
+}
+
+mat-toolbar-row .timeOfWorks {
+  position: absolute;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+mat-toolbar-row .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-toolbar-row {
+    font-size: 8px;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+
+    font-size: 0.9em;
+  }
+  70% {
+
+    font-size: 1.05em;
+  }
+  100% {
+
+    font-size: 0.9em;
+  }
+}
+@keyframes pulse {
+  0% {
+
+    font-size: 0.9em;
+  }
+  70% {
+
+    font-size: 1.05em;
+  }
+  100% {
+
+    font-size: 0.9em;
+  }
+}
