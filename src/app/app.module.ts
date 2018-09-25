@@ -20,6 +20,8 @@ import {AgmDirectionModule} from 'agm-direction';
 import {StarRatingModule} from 'angular-star-rating';
 import {HttpClientModule} from '@angular/common/http';
 import {GoogleApiModule, NG_GAPI_CONFIG, NgGapiClientConfig} from 'ng-gapi';
+import { GrmComponent } from './services/grm/grm.component';
+
 
 const gapiClientConfig: NgGapiClientConfig = {
   client_id: '876693417319-64ohobc9uoj415te940iqnv8rjco4vnp.apps.googleusercontent.com',
@@ -37,7 +39,9 @@ const gapiClientConfig: NgGapiClientConfig = {
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    GrmComponent
+
   ],
   imports: [
     BrowserModule,
