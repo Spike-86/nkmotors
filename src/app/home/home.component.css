@@ -24,28 +24,7 @@ img {
   right: 10vw;
 }
 
-agm-map {
-  height: 50vh;
-}
-
-.addRoute {
-  width: 100%;
-  margin: 10px 0;
-}
-
 .example-header-image {
   background-size: cover;
 }
 
-.reviews {
-  position: relative;
-}
-
-.reviews h3 {
-  text-align: center;
-}
-
-.reviews star-rating {
-  position: absolute;
-  right: 20px;
-}

@@ -1,0 +1,13 @@
+
+.reviews {
+  position: relative;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+
+.reviews star-rating {
+  position: absolute;
+  right: 20px;
+}

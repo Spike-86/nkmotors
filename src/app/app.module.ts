@@ -21,6 +21,8 @@ import {StarRatingModule} from 'angular-star-rating';
 import {HttpClientModule} from '@angular/common/http';
 import {GoogleApiModule, NG_GAPI_CONFIG, NgGapiClientConfig} from 'ng-gapi';
 import { GrmComponent } from './services/grm/grm.component';
+import { GooglemapComponent } from './googlemap/googlemap.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 
 const gapiClientConfig: NgGapiClientConfig = {
@@ -40,7 +42,9 @@ const gapiClientConfig: NgGapiClientConfig = {
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    GrmComponent
+    GrmComponent,
+    GooglemapComponent,
+    ReviewsComponent
 
   ],
   imports: [

@@ -1,0 +1,21 @@
+<div class="reviews">
+
+  <h3>Отзывы наших клиентов:</h3>
+
+  <mat-card class="example-card" *ngFor="let review of reviews.getReview()">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image" [style.backgroundImage]="'url('+ review.profile_photo_url +')'"></div>
+      <mat-card-title>{{ review.author_name }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{ review.text }}
+      </p>
+      <p>
+        <star-rating [starType]="'svg'" [rating]="review.rating"></star-rating>
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</div>
